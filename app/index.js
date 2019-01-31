@@ -2,9 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import { EventEmitter } from 'events';
-//import { relative } from 'path';
-//import { Transform } from 'stream';
-
 
 import { style } from './style';
 
@@ -188,14 +185,6 @@ class App extends React.Component {
           },3000)
           
         }, false);
-
-        //操作 text_container 動畫
-        /*
-        var text_container = document.getElementById("text_container");   
-        text_container.style.display = 'block';
-        $("#text_container").animate({top: "15px",opacity: 1},700,'swing');
-        */
-        
       }, false)  
     }, false);
   
@@ -213,7 +202,6 @@ class App extends React.Component {
 	textChange(e) {
     const text = e.target.value;
     this.setState({text});
-    //const ctx = document.getElementById('image_show').getContext('2d');
   }
   onInput() {
     var input = document.getElementById("typeinp");
